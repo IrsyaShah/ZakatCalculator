@@ -10,6 +10,15 @@ Users can enter gold weight, gold price and select type (keep or wear) to calcul
 - Share app feature
 - About page
 
+### Main Screen
+![Main Screen](screenshots/main.png)
+
+### Result Output
+![Result](screenshots/result.png)
+
+### About Screen
+![About Screen](screenshots/about.png)
+
 ## How it works
 1. Enter gold weight
 2. Enter gold price
