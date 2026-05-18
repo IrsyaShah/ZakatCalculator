@@ -10,6 +10,8 @@ Users can enter gold weight, gold price and select type (keep or wear) to calcul
 - Share app feature
 - About page
 
+## Screenshots
+
 ### Main Screen
 <img src="screenshots/main.png" width="250"/>
 
