@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (view == btnCalculate) {
 
             // declare variables
-            String type;
+            String type, result;
             double x, weight, goldprice, eligible, payValue, total;
 
             // get selected type
@@ -146,7 +146,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 total = payValue * 0.025;
 
                 // show result
-                txtTotal.setText(String.format(Locale.getDefault(), "Total Zakat: RM %.2f", total));
+                result = String.format(Locale.getDefault(), "Total Zakat: RM %.2f", total);
+                txtTotal.setText(result);
+                Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
             }
             catch (NumberFormatException e) {
                 // error input
