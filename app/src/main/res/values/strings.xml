@@ -1,0 +1,14 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Zakat Calculator</string>
+
+    <!-- Instruction Guide -->
+    <string name="instructions"><b>Zakat Calculator Guide</b>:\n\n 1. Select your gold type (Keep or Wear)\n 2. Enter gold weight in grams\n 3. Enter current gold price per gram\n\n <b>Note</b>:\n - Keep gold = 85 grams\n - Wear gold = 200 grams</string>
+
+    <!-- Spinner Item -->
+    <string-array name="type_gold">
+        <item>Select Type</item>
+        <item>Keep</item>
+        <item>Wear</item>
+    </string-array>
+</resources>
