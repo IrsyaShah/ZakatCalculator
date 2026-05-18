@@ -11,13 +11,13 @@ Users can enter gold weight, gold price and select type (keep or wear) to calcul
 - About page
 
 ### Main Screen
-![Main Screen](screenshots/main.png)
+<img src="screenshots/main.png" width="250"/>
 
 ### Result Output
-![Result](screenshots/result.png)
+<img src="screenshots/result.png" width="250"/>
 
 ### About Screen
-![About Screen](screenshots/about.png)
+<img src="screenshots/about.png" width="250"/>
 
 ## How it works
 1. Enter gold weight
