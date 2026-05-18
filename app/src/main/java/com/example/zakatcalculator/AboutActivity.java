@@ -62,7 +62,7 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
             // share app link
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
             shareIntent.setType("text/plain");
-            shareIntent.putExtra(Intent.EXTRA_TEXT, "https://t.co/app");
+            shareIntent.putExtra(Intent.EXTRA_TEXT, "https://github.com/IrsyaShah");
             shareIntent.putExtra(Intent.EXTRA_TITLE, "Check out this Zakat Calculator App!");
             startActivity(Intent.createChooser(shareIntent, null));
             return true;
@@ -81,7 +81,7 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
 
         // open github website
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("https://yourwebsite.com"));
+        intent.setData(Uri.parse("https://github.com/IrsyaShah"));
         startActivity(intent);
     }
 }
