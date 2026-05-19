@@ -18,7 +18,7 @@ Users can enter gold weight, gold price and select type (keep or wear) to calcul
 ### Result Output
 <img src="screenshots/result.png" width="250"/>
 
-### Share Screen
+### Share Feature
 <img src="screenshots/share.png" width="250"/>
 
 ### About Screen
