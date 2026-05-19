@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     // declare variables
     Toolbar mainToolbar;
-    TextView txtTotal;
+    TextView txtUruf, txtPayable, txtTotalZakat;
     EditText etGoldWeight, etGoldPrice;
     Spinner spType;
     Button btnCalculate, btnClear;
@@ -51,9 +51,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         spType.setAdapter(adapter);
 
         // initialize views
-        txtTotal = findViewById(R.id.txtTotal);
         etGoldWeight = findViewById(R.id.etGoldWeight);
         etGoldPrice = findViewById(R.id.etGoldPrice);
+        txtUruf = findViewById(R.id.txtUruf);
+        txtPayable = findViewById(R.id.txtPayable);
+        txtTotalZakat = findViewById(R.id.txtTotalZakat);
         btnCalculate = findViewById(R.id.btnCalculate);
         btnClear = findViewById(R.id.btnClear);
 
@@ -102,8 +104,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (view == btnCalculate) {
 
             // declare variables
-            String type, result;
-            double x, weight, goldprice, eligible, payValue, total;
+            String type;
+            double x, weight, goldprice, uruf, payAmount, total;
 
             // get selected type
             type = spType.getSelectedItem().toString().trim();
@@ -133,22 +135,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
 
                 // calculate eligible weight
-                eligible = weight - x;
+                uruf = weight - x;
 
-                // calculate payable value
-                if (eligible <= 0) {
-                    payValue = 0;
+                // calculate payable amount
+                if (uruf <= 0) {
+                    payAmount = 0;
                 } else {
-                    payValue = eligible * goldprice;
+                    payAmount = uruf * goldprice;
                 }
 
                 // calculate zakat (2.5%)
-                total = payValue * 0.025;
+                total = payAmount * 0.025;
 
                 // show result
-                result = String.format(Locale.getDefault(), "Total Zakat: RM %.2f", total);
-                txtTotal.setText(result);
-                Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
+                txtUruf.setText(String.format(Locale.US, "RM %.2f", uruf));
+                txtPayable.setText(String.format(Locale.US, "RM %.2f", payAmount));
+                txtTotalZakat.setText(String.format(Locale.US, "RM %.2f", total));
             }
             catch (NumberFormatException e) {
                 // error input
@@ -160,7 +162,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             etGoldWeight.setText("");
             etGoldPrice.setText("");
             spType.setSelection(0);
-            txtTotal.setText("");
+            txtUruf.setText("");
+            txtPayable.setText("");
+            txtTotalZakat.setText("");
         }
     }
 }
