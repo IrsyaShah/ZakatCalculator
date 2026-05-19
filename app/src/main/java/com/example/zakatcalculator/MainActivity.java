@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             // share app link
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
             shareIntent.setType("text/plain");
-            shareIntent.putExtra(Intent.EXTRA_TEXT, "https://github.com/IrsyaShah");
+            shareIntent.putExtra(Intent.EXTRA_TEXT, "https://github.com/IrsyaShah/ZakatCalculator");
             shareIntent.putExtra(Intent.EXTRA_TITLE, "Check out this Zakat Calculator App!");
             startActivity(Intent.createChooser(shareIntent, null));
             return true;
