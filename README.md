@@ -13,7 +13,7 @@ Users can enter gold weight, gold price and select type (keep or wear) to calcul
 ## Screenshots
 
 ### Calculator Screen
-<img src="screenshots/calcylator.png" width="250"/>
+<img src="screenshots/calculator.png" width="250"/>
 
 ### Result Output
 <img src="screenshots/result.png" width="250"/>
