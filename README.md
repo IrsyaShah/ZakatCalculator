@@ -5,7 +5,7 @@ This is a simple Android application that calculates gold zakat.
 Users can enter gold weight, gold price and select type (keep or wear) to calculate total zakat, payable amount and uruf value.
 
 ## Features
-- Calculate gold zakat
+- Zakat Calculation
 - Input validation
 - Share app feature
 - About page
